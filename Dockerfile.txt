@@ -1,0 +1,10 @@
+FROM python
+MAINTAINER Stanley
+
+COPY requirements.txt /
+
+RUN pip install -r requirements.txt
+
+COPY /AAAtest /AAAtest
+
+WORKDIR /AAAtest
